@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Lab06problem18
+{
+  public static void main(String[]args)
+  {
+    Scanner A=new Scanner(System.in);
+    System.out.println("enter row");
+    int m=A.nextInt();
+    int i=1;
+    while(i<=m)
+    {
+      int k=1;
+      while(k<=m-i)
+      {
+        System.out.print(" ");
+        k++;
+      }
+      int j=1;
+      while(j<=i)
+      {
+        if(j==1||j==m||i==1||i==m||i==j)
+        {
+        System.out.print("*");
+        }
+        else
+        {
+        System.out.print(" ");
+        }
+        j++;
+      }
+      i++;
+      System.out.println();
+    }
+    System.out.println();
+  }
+}
