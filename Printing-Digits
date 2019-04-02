@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Lab06problem01
+{
+  public static void main(String[]args)
+  {
+    Scanner A = new Scanner(System.in);
+    System.out.println("faizlami bondho koro ! ! !");
+    int k = A.nextInt();
+    int a;
+      for(a=1;a<=k;a++)
+      {
+        System.out.print(a);
+      }
+  }
+}
