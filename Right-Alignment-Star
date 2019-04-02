@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Lab06problem07
+{
+  public static void main(String[]args)
+  {
+    Scanner A = new Scanner(System.in);
+    System.out.println("enter Line");
+    int L = A.nextInt();
+    int a,b,c;
+    int s = L - 1;
+      for(a=1;a<=L;a++)
+      {
+        for(b=1;b<=s;b++)
+        {
+          System.out.print("A");
+        }
+         for(c=1;c<=a;c++)
+         {
+           System.out.print("*");
+         }
+        System.out.println();
+        s--;
+      }
+  }
+}
