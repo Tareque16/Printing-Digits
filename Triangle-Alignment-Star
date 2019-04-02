@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Lab06problem10
+{
+  public static void main(String[]args)
+  {
+    Scanner A = new Scanner(System.in);
+    System.out.println("enter line");
+    int input = A.nextInt();
+    int space = input - 1;
+    int i,s,a;
+    for(i=1;i<=input;i++)
+    {
+      for(s=1;s<=space;s++)
+      {
+        System.out.print("A");
+      }
+      int j = (i*2)-1;
+      for(a=1;a<=j;a++)
+      {
+        System.out.print(a);
+      }
+      for(s=1;s<=space;s++)
+      {
+        System.out.print(" ");
+      }
+      System.out.println();
+      space--;
+    }
+  }
+}
